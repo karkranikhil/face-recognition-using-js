@@ -3,7 +3,7 @@ const isScreenSmall = window.matchMedia("(max-width: 700px)");
 let predictedAges = [];
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri("/face-recognition-using-js/models"),
+  faceapi.nets.tinyFaceDetector.loadFromUri("https://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
   faceapi.nets.faceLandmark68Net.loadFromUri("/models"),
   faceapi.nets.faceRecognitionNet.loadFromUri("/models"),
   faceapi.nets.faceExpressionNet.loadFromUri("/models"),
