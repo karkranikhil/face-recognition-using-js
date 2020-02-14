@@ -3,11 +3,11 @@ const isScreenSmall = window.matchMedia("(max-width: 700px)");
 let predictedAges = [];
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri("http://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("http://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
-  faceapi.nets.faceRecognitionNet.loadFromUri("http://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
-  faceapi.nets.faceExpressionNet.loadFromUri("http://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
-  faceapi.nets.ageGenderNet.loadFromUri("http://github.com/karkranikhil/face-recognition-using-js/tree/master/models")
+  faceapi.nets.tinyFaceDetector.loadFromUri("https://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("https://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("https://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
+  faceapi.nets.faceExpressionNet.loadFromUri("https://github.com/karkranikhil/face-recognition-using-js/tree/master/models"),
+  faceapi.nets.ageGenderNet.loadFromUri("https://github.com/karkranikhil/face-recognition-using-js/tree/master/models")
 ]).then(startVideo);
 
 function startVideo() {
