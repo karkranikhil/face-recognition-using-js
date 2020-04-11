@@ -1,3 +1,8 @@
+navigator.getUserMedia = ( navigator.getUserMedia ||
+  navigator.webkitGetUserMedia ||
+  navigator.mozGetUserMedia ||
+  navigator.msGetUserMedia);
+
 const video = document.getElementById("video");
 const isScreenSmall = window.matchMedia("(max-width: 700px)");
 let predictedAges = [];
@@ -65,7 +70,7 @@ video.addEventListener("playing", () => {
       document.getElementById("gender").innerText = `Gender - ${gender}`;
       document.getElementById("emotion").innerText = `Emotion - ${emotion[0]}`;
     }
-  }, 10);
+  }, 100);
 });
 
 function interpolateAgePredictions(age) {
